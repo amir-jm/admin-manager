@@ -1,0 +1,81 @@
+*{
+    
+    font-family: vazirmatn , tahoma;
+}
+@font-face {
+    font-family: vazirmatn;
+    src: url(./Vazirmatn-Regular.ttf);
+}
+body{
+    background-color: #eee;
+}
+.sidebar{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(./images/sidebar-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -5px 7px 20px rgba(128, 128, 128, 0.788);
+    height: 100vh;
+}
+
+.sidebar ul li a{
+    color: white;
+    padding: 15px;
+}
+.sidebar ul li:hover{
+    background-color: rgba(128, 128, 128, 0.637);
+    border-radius: 10px;
+}
+.sidebar ul li:hover a{
+    color: white;
+}
+.sidebar ul li{
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px 0;
+}
+.sidebar ul .current{
+    background-color: orangered;
+    border-radius: 10px;
+}
+.sidebar ul .current:hover{
+    background-color: orange;
+    transform: translateY(-2px);
+}
+
+nav form .searchbar{
+   background-color: transparent;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   transition: border-bottom 0.3s; 
+}
+nav form .searchbar::placeholder{
+    color: #ccc;
+}
+nav form .searchbar:focus{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.692);
+    color: #ccc;
+}
+nav form .search-btn{
+    background-color: transparent;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+nav form .search-btn:hover{
+    background-color: #ccc;
+}
+
+
+
+@media (max-width:768px){
+    nav .sidebar{
+        position: static;
+        height: auto;
+    }
+    nav .top-nav{
+        position: static;
+
+    }
+}
