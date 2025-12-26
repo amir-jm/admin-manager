@@ -67,6 +67,14 @@ nav form .search-btn:hover{
     background-color: #ccc;
 }
 
+main .cards{
+    transition: box-shadow 0.3s ,transform 0.3s;
+}
+main .cards:hover{
+    box-shadow: -3px 5px 15px rgba(128, 128, 128, 0.4);
+    transform: translateY(1px);
+}
+
 
 
 @media (max-width:768px){
