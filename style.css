@@ -6,6 +6,10 @@
     font-family: vazirmatn;
     src: url(./Vazirmatn-Regular.ttf);
 }
+
+svg{
+    fill: currentColor;
+}
 body{
     background-color: #eee;
 }
