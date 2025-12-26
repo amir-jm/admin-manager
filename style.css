@@ -11,7 +11,7 @@ svg{
     fill: currentColor;
 }
 body{
-    background-color: #eee;
+    background-color: #eee !important;
 }
 .sidebar{
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url(./images/sidebar-img.jpg);
@@ -77,6 +77,12 @@ main .cards{
 main .cards:hover{
     box-shadow: -3px 5px 15px rgba(128, 128, 128, 0.4);
     transform: translateY(1px);
+}
+.div{
+    border: 1px solid black;
+}
+.borderRight{
+    border-right: 3px solid orangered;
 }
 
 
